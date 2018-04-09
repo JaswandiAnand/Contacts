@@ -1,0 +1,53 @@
+﻿<script src="~/Scripts/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="~/Scripts/MyFunctions.js"></script>
+
+<table border="1">
+    <tr>
+        <td>
+            <h1 style="color: green">Get All Contacts </h1>
+            <button id="btnAllContact" onclick="GetAllContacts();return false;">Get All Contacts</button><br>
+            <div id="divDisplayAllContacts"></div>              
+        </td>      
+    </tr>
+    <tr>
+        <td>
+            <h1 style="color: green">Add/Update Contact</h1>
+                <table border="1">
+                    <tr>
+                        <td>Contact Id</td>
+                        <td><input id="txtContactId" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input id="txtFirstName" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input id="txtLastName" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input id="txtEmail" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td><input id="txtPhoneNumber" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td><input id="txtStatus" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><button id="btnPostContact" onclick="AddContact()">Add New Contact</button></td>
+                        <td><button id="btnPutContact" onclick="UpdateContact()">Update Contact</button></td>
+                    </tr>
+                </table>   
+        </td>
+
+        <td>
+            <h1 style="color: green">Delete Contact</h1>
+                Enter ContactId:<input id="txtDelContactId" type="text" />
+                <button id="btnDeleteContact" onclick="DeleteContact();return false;">Delete Contact</button><br> 
+        </td>
+    </tr>
+</table>
